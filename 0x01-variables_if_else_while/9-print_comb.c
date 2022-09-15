@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char out = ('0' - 1);
+	int out = ('0' - 1);
 
 	while (out++ < '9')
 	{
