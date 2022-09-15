@@ -12,8 +12,7 @@
  */
 int main(void)
 {
-	char[52] str;
-	strcpy(str1, "\"Programming is like building a multilingual puzzle");
+	char str[] = "\"Programming is like building a multilingual puzzle";
 	puts(str);
 
 	return (0);
