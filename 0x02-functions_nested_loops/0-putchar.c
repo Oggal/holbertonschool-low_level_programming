@@ -10,7 +10,7 @@ int main(void)
 	int count = sizeof(str) / sizeof(str[0]);
 	int i;
 
-	for (i = 0; i < count; i++)
+	for (i = 0; i < (count-1); i++)
 	{
 	_putchar(str[i]);
 	}
