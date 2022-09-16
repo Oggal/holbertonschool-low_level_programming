@@ -10,11 +10,12 @@
  *print_alphabet - Print out the alphabet in lowercase
  *Return: void
  */
-void print_alphabet()
+void print_alphabet(void)
 {
 	char i = 'a';
-	do
-	{
+
+	do {
 		_putchar(i);
-	}while(i < 'z');
+	} while (i < 'z');
+	_putchar('\n');
 }
