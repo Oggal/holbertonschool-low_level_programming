@@ -16,6 +16,6 @@ void print_alphabet(void)
 
 	do {
 		_putchar(i);
-	} while (i < 'z');
+	} while (i++ < 'z');
 	_putchar('\n');
 }
