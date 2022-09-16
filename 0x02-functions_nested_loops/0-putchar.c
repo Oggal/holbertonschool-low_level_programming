@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char str[] = "_putchar\n";
+	char str[] = "_putchar";
 	int count = sizeof(str) / sizeof(str[0]);
 	int i;
 
