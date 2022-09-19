@@ -11,7 +11,7 @@ void put2char(int n)
 		_putchar('0');
 	else
 		_putchar('0' + (n / 10));
-	_putchar('0' + (n % 10);
+	_putchar('0' + (n % 10));
 }
 
 /**
