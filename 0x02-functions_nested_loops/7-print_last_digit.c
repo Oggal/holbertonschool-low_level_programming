@@ -2,6 +2,7 @@
 
 /**
  *print_last_digit - Print the last Digit of INT n
+ *    And return it's value
  *@n: Digit to take the last digit of
  *
  *Return: Last digit of N
@@ -12,5 +13,6 @@ int print_last_digit(int n)
 
 	if (o < 0)
 		o *= -1;
+	_putchar('0' + o);
 	return (o);
 }
