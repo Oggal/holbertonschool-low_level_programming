@@ -21,4 +21,6 @@ void jack_bauer(void);
 
 void put2char(int n);
 
+void times_table(void);
+
 #endif
