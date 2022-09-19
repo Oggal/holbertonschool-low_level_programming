@@ -17,4 +17,5 @@ void print_to_98(int start)
 			start++;
 		printf(", %i", start);
 	}
+	printf("\n");
 }
