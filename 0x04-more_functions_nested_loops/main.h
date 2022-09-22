@@ -1,5 +1,5 @@
 #ifndef PHIL_MAIN
-#def PHIL_MAIN
+#define PHIL_MAIN
 
 int _putchar(char);
 
