@@ -3,11 +3,11 @@
 /**
  *print_numbers - We print numbers
  */
-void print_numebrs()
+void print_numebrs(void)
 {
 	int i = 0;
 
-	for (;i<10;i++)
+	for (; i < 10; i++)
 		_putchar('0' + i);
 	_putchar('\n');
 }
