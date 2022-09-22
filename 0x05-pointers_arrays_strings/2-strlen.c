@@ -4,7 +4,7 @@
  *_strlen - String Length
  *@s: String to measure
  *
- *Returns: int length of s
+ *Return: int length of s
  *
  */
 int _strlen(char *s)
