@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_puts - Print a String
+ *print_rev - Print a String reveresed
  *@s: String to print
  *
  */
