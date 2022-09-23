@@ -5,7 +5,7 @@
  *@s: String to print
  *
  */
-void _puts(char s*)
+void _puts(char *s)
 {
 	int i = 0;
 
