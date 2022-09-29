@@ -8,14 +8,17 @@
  */
 char *leet(char *s)
 {
-	int l33t[8] = -1;
+	int l33t[8];
 	int a2A = 'A' - 'a';
 	int i, j;
 
 	l33t[0] = 'O';
 	l33t[1] = 'L';
+	l33t[2] = -1;
 	l33t[3] = 'E';
 	l33t[4] = 'A';
+	l33t[5] = -1;
+	l33t[6] = -1;
 	l33t[7] = 'T';
 
 	for (i = 0; s[i]; i++)
