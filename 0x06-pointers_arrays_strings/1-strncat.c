@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *_strcat - Concatenate two strings
+ *_strncat - Concatenate two strings
  *@dest: First and Returned String
  *@src:  String to append onto the first
  *@n: Max chars to copy
@@ -17,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 	do {
 		dest[len + i] = src[i];
 	} while (n > ++i && src[i]);
-	if(i == n && dest[len+i] != '\0')
-		dest[len+i] = '\0';
+	if (i == n && dest[len + i] != '\0')
+		dest[len + i] = '\0';
 	return (dest);
 }
