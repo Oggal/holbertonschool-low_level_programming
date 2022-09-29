@@ -11,7 +11,7 @@ char *cap_string(char *s)
 	int offest = ('A' - 'a');
 	int changeNext = 1, i;
 
-	for (int i = 0; s[i]; i++)
+	for (i = 0; s[i]; i++)
 	{
 		if (isdelim(s[i]))
 		{
