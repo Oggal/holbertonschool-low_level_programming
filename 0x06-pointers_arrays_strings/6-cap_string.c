@@ -21,8 +21,9 @@ char *cap_string(char *s)
 		if (s[i] >= 'a' && s[i] <= 'z')
 			s[i] += offest;
 		changeNext = 0;
-
 	}
+
+	return (s);
 }
 
 /**
