@@ -3,7 +3,7 @@
 /**
  *print_diagsums - printf diagsums
  *@a: 2D Square Array Pointer
- *@s: Size of Array Square
+ *@size: Size of Array Square
  *
  */
 void print_diagsums(int *a, int size)
@@ -16,5 +16,5 @@ void print_diagsums(int *a, int size)
 		i++;
 		sumB += a[(i * size) - i];
 	}
-	printf("%i, %i", sumA, sumB);
+	printf("%i, %i\n", sumA, sumB);
 }
