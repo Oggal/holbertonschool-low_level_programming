@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  *_strpbrk - Find a byte
@@ -16,12 +17,9 @@ char *_strpbrk(char *s, char *a)
 		for (j = 0; a[j]; j++)
 		{
 			if (a[j] == s[i])
-				break;
+				return (s + i);
 		}
-		if (s[i] == a[j])
-			break;
 	}
-	if (s[i] != a[j])
-		return (0);
-	return (s + i);
+
+	return (NULL);
 }
