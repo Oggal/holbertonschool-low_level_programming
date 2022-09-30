@@ -1,7 +1,7 @@
 #include "main.c"
 
 /**
- *_strbrk - Find a byte
+ *_strpbrk - Find a byte
  *@s: String to search
  *@a: Bytes to find
  *
