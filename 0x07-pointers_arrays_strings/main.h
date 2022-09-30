@@ -12,5 +12,6 @@ char *_strstr(char *s, char *a);
 unsigned int _strspn(char *s, char *a);
 
 void print_chessboard(char (*grid)[8]);
+void print_diagsums(int *a, int size);
 
 #endif
