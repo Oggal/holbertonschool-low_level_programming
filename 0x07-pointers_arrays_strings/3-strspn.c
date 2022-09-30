@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *a)
 			if (s[i] == a[j])
 				break;
 		}
-		if(s[i] != a[j])
+		if (s[i] != a[j])
 			break;
 	}
 
