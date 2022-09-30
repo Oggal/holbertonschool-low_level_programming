@@ -16,7 +16,7 @@ char *_strstr(char *s, char *a)
 	{
 		for (j = 0; a[j]; j++)
 		{
-			if (s[i+j] != a[j])
+			if (s[i + j] != a[j])
 				break;
 		}
 		if (!a[j]) /*Check if loop ended naturally*/
