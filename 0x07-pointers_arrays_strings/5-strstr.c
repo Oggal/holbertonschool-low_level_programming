@@ -8,7 +8,7 @@
  *
  *Return: Pointer to byte found
  */
-char *_strpbrk(char *s, char *a)
+char *_strstr(char *s, char *a)
 {
 	int i, j;
 
