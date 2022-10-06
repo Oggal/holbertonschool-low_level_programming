@@ -22,7 +22,7 @@ int is_prime_number(int n)
  */
 int pCheck(int n, int i)
 {
-	if (n % i || i)
-		return pCheck(n, --i);
+	if (n % i && i)
+		return (pCheck(n, --i));
 	return (i);
 }
