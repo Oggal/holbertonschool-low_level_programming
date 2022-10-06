@@ -1,5 +1,5 @@
+#include <stdlib.h>
 #include <stdio.h>
-
 /**
  *main - Program Entry Point
  *@argc: Argument Count
@@ -9,11 +9,13 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
+	int A, B;
 
+	A = atoi(argv[1]);
+	B = atoi(argv[2]);
 	if (argc == 3)
 	{
-		printf("%d\n",argv[1] * argv[2]);
+		printf("%d\n", A * B);
 	}
 	else
 	{
