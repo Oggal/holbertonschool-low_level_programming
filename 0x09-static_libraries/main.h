@@ -8,7 +8,7 @@ int _abs(int n);
 int _isupper(int);
 int _isdigit(int);
 int _strlen(char *s);
-int _strcmp(char *s1,char *s2);
+int _strcmp(char *s1, char *s2);
 
 int _atoi(char *s); /*TODO*/
 
