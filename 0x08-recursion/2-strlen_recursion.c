@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_strlen_recursion - Find String Length, 
+ *_strlen_recursion - Find String Length,
  *@s: String to count
  *
  * Return: Length of String
