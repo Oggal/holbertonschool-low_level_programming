@@ -1,7 +1,9 @@
 #ifndef OGGAL
 #define OGGAL
 
+/*Standard Incudes*/
 #include <stddef.h>
+#include <stdlib.h>
 /*Provided Methods*/
 int _putchar(char);
 /*Project Methods*/
