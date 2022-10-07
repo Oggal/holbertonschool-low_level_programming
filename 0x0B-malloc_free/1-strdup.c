@@ -21,8 +21,10 @@ char *_strdup(char *str)
 	o = malloc(sizeof(char) * len);
 	if (o == NULL)
 		return (NULL);
-	/*Just checked if we found memmory, going to <= to include
-	  the null byte. This Comment may not pass betty*/
+	/*
+	 *  Just checked if we found memmory, going to <= to include
+	 *  the null byte. This Comment may not pass betty
+	 */
 	for (i = 0; i <= len; i++)
 	{
 		o[i] = str[i];
