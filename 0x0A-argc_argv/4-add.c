@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		myString = *(argv + i);
-	        for (j = 0; myString[j]; j++)
+		for (j = 0; myString[j]; j++)
 		{
 			if (myString[j] < '0' || myString[j] > '9')
 			{
@@ -27,5 +27,7 @@ int main(int argc, char *argv[])
 		}
 		sum += atoi(argv[i]);
 	}
-	printf("%i\n",sum);
+	printf("%i\n", sum);
+
+	return (0);
 }
