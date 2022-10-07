@@ -14,9 +14,15 @@ int **alloc_grid(int w, int h)
 
 	if (w < 1 || h < 1)
 		return (NULL);
-	o = malloc(sizeof(int) * (w * h));
+	o = (int**)malloc(sizeof(int*) * w);
 	if (o == NULL)
 		return (NULL);
+	for (i = 0; i < h; i++)
+	{
+		o[i] = malloc(sizeof(int) * h);
+		if( o[i] == NULL)
+			return (NULL);
+	}
 	for (i = 0; i < h; i++)
 		for (j = 0; j < w; j++)
 			o[i][j] = 0;
