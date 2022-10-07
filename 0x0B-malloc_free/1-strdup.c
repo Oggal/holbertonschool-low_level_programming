@@ -11,6 +11,8 @@ char *_strdup(char *str)
 	char *o; /*Output*/
 	int len, i;
 
+	if (str == NULL)
+		return (NULL);
 	/*We know str is a string, find the length*/
 	len = 0;
 	while (str[len++])
