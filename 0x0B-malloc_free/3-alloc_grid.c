@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *alloc_grid
+ *alloc_grid - Allocate 2d array
  *@w: Width
  *@h: Height
  *
- *Return:
+ *Return: Allocated Grid
  */
 int **alloc_grid(int w, int h)
 {
@@ -14,15 +14,16 @@ int **alloc_grid(int w, int h)
 
 	if (w < 1 || h < 1)
 		return (NULL);
-	o = (int**)malloc(sizeof(int*) * h);
+	o = (int **)malloc(sizeof(int *) * h);
 	if (o == NULL)
 		return (NULL);
 	for (i = 0; i < h; i++)
 	{
 		o[i] = malloc(sizeof(int) * w);
-		if( o[i] == NULL)
+		if (o[i] == NULL)
 		{
 			free(o);
+
 			return (NULL);
 		}
 	}
