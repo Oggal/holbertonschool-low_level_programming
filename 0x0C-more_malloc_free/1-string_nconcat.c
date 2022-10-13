@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/*Only use max N bytes*/
 	l2 = ((n >= l2) ? l2 : n);
 	/*to repeat, if N is larger, use l2, otherwise n*/
-	o = malloc(sizeof(char) * (l1 + l2)+1);
+	o = malloc(sizeof(char) * (l1 + l2 + 1));
 	/*can use l2, since we know we maxed it at n*/
 	if (o == NULL)
 		return (NULL);
