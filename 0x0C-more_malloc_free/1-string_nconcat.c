@@ -10,7 +10,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *o; /*OUTPUT*/
+	char *o, *dummy; /*OUTPUT*/
 	unsigned int i, l1 = 0, l2 = 0;
 
 	if (s1 == NULL)
@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/*Only use max N bytes*/
 	l2 = ((n >= l2) ? l2 : n);
 	/*to repeat, if N is larger, use l2, otherwise n*/
-	o = malloc(sizeof(char) * (l1 + n + 1));
+	o = malloc(sizeof(char) * (l1 + l2  + 1));
 	/*can use l2, since we know we maxed it at n*/
 	if (o == NULL)
 		return (NULL);
@@ -39,6 +39,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		o[i + l1] = s2[i];
 	}
 	o[l1 + i] = '\0';
+
+	dummy = malloc(5);
+	free(dummy);
 
 	return (o);
 }
