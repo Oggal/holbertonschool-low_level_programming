@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  *string_nconcat - Concat 2 strings, max of n bytes from string 2
  *@s1: First String
@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/*Only use max N bytes*/
 	l2 = ((n >= l2) ? l2 : n);
 	/*to repeat, if N is larger, use l2, otherwise n*/
-	o = malloc(sizeof(char) * (l1 + l2 + 1));
+	o = malloc(sizeof(char) * (l1 + n + 1));
 	/*can use l2, since we know we maxed it at n*/
 	if (o == NULL)
 		return (NULL);
@@ -35,7 +35,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		o[i] = s1[i];
 	}
 	for (i = 0; i < l2; i++)
+	{
 		o[i + l1] = s2[i];
+	}
 	o[l1 + i] = '\0';
 
 	return (o);
