@@ -1,5 +1,5 @@
 #ifndef FUNC_POINT_H
-#define FUNK_POINT_H
+#define FUNC_POINT_H
 
 #include <stddef.h>
 #include <stdlib.h>
