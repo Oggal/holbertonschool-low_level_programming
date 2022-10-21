@@ -19,7 +19,7 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	}
 	va_start(args, n);
 	printf("%i",va_arg(args,int));
-	for (int i = 1; i < n; i++)
+	for (i = 1; i < n; i++)
 	{
 		printf("%s%i",
 		       ((seperator == NULL) ?  "" : seperator),
