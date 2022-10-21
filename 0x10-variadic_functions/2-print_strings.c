@@ -2,8 +2,8 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * print_numbers - Print a string of numbers
- *@seperator: string to split up thenumbers
+ * print_strings - Print a string of strings
+ *@seperator: string to split up the strings
  *@n: number of numbers listed
  *
  */
