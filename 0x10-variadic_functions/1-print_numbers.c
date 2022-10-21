@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
-
+#include <stdio.h>
 /**
  * print_numbers - Print a string of numbers
  *@seperator: string to split up thenumbers
@@ -18,12 +18,12 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 		return;
 	}
 	va_start(args, n);
-	printf("%i"va_arg(args,int));
-	for (int i = 1; i < n; i++;)
+	printf("%i",va_arg(args,int));
+	for (int i = 1; i < n; i++)
 	{
 		printf("%s%i",
-		       ((seperator == null) ?  "" : seperator),
-		       va_args(args,int));
+		       ((seperator == NULL) ?  "" : seperator),
+		       va_arg(args,int));
 	}
 	printf("\n");
 }
