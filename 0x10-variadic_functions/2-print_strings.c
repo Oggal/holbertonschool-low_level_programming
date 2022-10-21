@@ -7,9 +7,10 @@
  *@n: number of numbers listed
  *
  */
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_strings(const char *seperator, const unsigned int n, ...)
 {
 	va_list args;
+	char *holder;
 	unsigned int i;
 
 	if (n == 0)
@@ -18,12 +19,14 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 		return;
 	}
 	va_start(args, n);
-	printf("%i", va_arg(args, int));
+	holder = va_arg(args, char *);
+	printf("%s", (holder == NULL) ? "(nil)" : holder);
 	for (i = 1; i < n; i++)
 	{
-		printf("%s%i",
+		holder = va_arg(args, char *);
+		printf("%s%s",
 		       ((seperator == NULL) ?  "" : seperator),
-		       va_arg(args, int));
+		       ((holder == NULL) ? "(nil)" : holder));
 	}
 	printf("\n");
 }
