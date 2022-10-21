@@ -12,7 +12,7 @@ int main(int argCount, char *argValue[])
 	int (*f)(int, int);
 	int result;
 
-	if (argCount != 4)
+	if (argCount < 4)
 	{
 		printf("ERROR\n");
 		return (98);
