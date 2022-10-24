@@ -23,20 +23,20 @@ void print_all(const char * const format, ...)
 			i++;
 			continue;
 		}
-	        if (i != 0)
+		if (i != 0)
 			printf(", ");
 		out[1] = format[i];
 		switch (format[i])
 		{
 		case 'i':
 		case 'c':
-	        	printf(out, va_arg(args, int));
+			printf(out, va_arg(args, int));
 			break;
 		case 'f':
-	        	printf(out, va_arg(args, double));
+			printf(out, va_arg(args, double));
 			break;
 		case 's':
-	        	printf(out, va_arg(args, char *));
+			printf(out, va_arg(args, char *));
 			break;
 		}
 
