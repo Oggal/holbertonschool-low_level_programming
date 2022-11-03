@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * print_list - Print a singly linked list
+ * @h: Node to start printing at
+ *
+ * Return: Number of nodes
+ */
 size_t print_list(const list_t *h)
 {
 	if (h == NULL)
