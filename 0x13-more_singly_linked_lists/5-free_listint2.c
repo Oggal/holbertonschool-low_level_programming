@@ -5,12 +5,12 @@
  * @head: Head of List to free
  *
  */
-void free_listint2(listint_t *head)
+void free_listint2(listint_t **head)
 {
-	if (head == NULL)
+	if (*head == NULL)
 		return;
-	if (head->next != NULL)
-		free_listint(head->next);
-	free(head);
-	head == NULL;
+	if ((*head)->next != NULL)
+		free_listint((*head)->next);
+	free(*head);
+	*head == NULL;
 }
