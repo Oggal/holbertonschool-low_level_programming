@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
+ * pop_listint - 'POP' the head node from linked list
+ * @head: Head node of list to pop
  *
- *
- *
- *
+ * Return: Value of head node
  */
 int pop_listint(listint_t **head)
 {
