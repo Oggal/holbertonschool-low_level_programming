@@ -1,9 +1,12 @@
 #include "main.h"
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 
 /**
- *
- *
- *
+ * read_textfile - Read text from file
+ * @filename: File to read
+ *@letters: Number of letters to read
  *
  * Return: Letters Printed
  */
