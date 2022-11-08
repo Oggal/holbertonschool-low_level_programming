@@ -21,6 +21,7 @@ unsigned int binary_to_uint(const char *b)
 			o = o << 1;
 		if (b[i] == '1')
 			o = (o << 1) + 1;
+		i++;
 	}
 	return (o);
 }
