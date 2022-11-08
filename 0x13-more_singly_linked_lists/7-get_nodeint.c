@@ -2,7 +2,7 @@
 
 
 /**
- * getnodeint_at_index - Retrieve node at index
+ * get_nodeint_at_index - Retrieve node at index
  * @head: Head of list to retrieve node from
  * @index: Value of node to retrieve
  *
