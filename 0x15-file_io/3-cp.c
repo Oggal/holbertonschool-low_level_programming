@@ -28,12 +28,14 @@ int main(int argCount, char **argVal)
 	if (fd_C < 0)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", argVal[2]);
+		exit(99);
 	}
 	while ((len = read(fd_H, Buff, 1024)) == 1024)
 		wr = write(fd_C, Buff, len);
 	wr = write(fd_C, Buff, len);
 	close(fd_H);
 	close(fd_C);
-
+	if (wr < 0)
+		exit(99);
 	return (0);
 }
