@@ -73,6 +73,8 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 void free_list(list_t *head);
 void free_listint(listint_t *head);
 void free_listint2(listint_t **head);
+void free_dlistint(dlistint_t *head);
+
 
 int pop_listint(listint_t **head);
 int sum_listint(listint_t *head);
