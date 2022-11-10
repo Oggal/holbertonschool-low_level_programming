@@ -64,7 +64,8 @@ list_t *add_node_end(list_t **head, const char *str);
 listint_t *add_nodeint(listint_t **head, const int n);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n);
+listint_t *insert_nodeint_at_index(
+	listint_t **head, unsigned int index, int n);
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
