@@ -14,7 +14,7 @@ size_t print_dlistint_backward(const dlistint_t *h)
 		return (0);
 	while (h->next)
 		h = h->next;
-	for (c = 0; h; i++, h = h->prev)
+	for (c = 0; h; c++, h = h->prev)
 		printf("%i\n", h->n);
 	return (c);
 }
