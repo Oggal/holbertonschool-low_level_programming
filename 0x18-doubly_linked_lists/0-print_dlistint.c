@@ -6,7 +6,7 @@
  *
  * Return: Count of Elements
  */
-size_t print_dlistint(const dlistint *h)
+size_t print_dlistint(const dlistint_t *h)
 {
 	/*
 	 *  Gonna assume we're given the head every time
