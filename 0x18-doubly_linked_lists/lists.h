@@ -83,5 +83,7 @@ int pop_listint(listint_t **head);
 int sum_listint(listint_t *head);
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
 int sum_dlistint(dlistint_t *head);
+int delete_dnodeint_at_index(
+	dlistint_t **head, unsigned int index);
 
 #endif
