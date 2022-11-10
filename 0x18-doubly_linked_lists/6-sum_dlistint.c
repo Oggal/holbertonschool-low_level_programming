@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *sum_dnodeint - Get Node At Index
+ *sum_dlistint - Get Node At Index
  *@head: Head of list
  *
  *Return: Sum of All Nodes
