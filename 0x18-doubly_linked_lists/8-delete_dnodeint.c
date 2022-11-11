@@ -2,7 +2,7 @@
 
 /**
  *delete_dnodeint_at_index - remove Node At Index
- *@head: Head of list
+ *@h: Head of list
  *@index: Index of node to remove
  *
  *Return: Node at index or null
@@ -12,7 +12,7 @@ int delete_dnodeint_at_index(dlistint_t **h, unsigned int index)
 {
 	dlistint_t *head;
 
-	if (h == NULL)
+	if (h == NULL || *h == NULL)
 		return (-1);
 	head = *h;
 	while (head->prev)
