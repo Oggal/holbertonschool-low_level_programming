@@ -6,7 +6,7 @@
  * @key: Key to value
  * @value: Value to store
  *
- * Return : 1 on success
+ * Return: 1 on success
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -15,29 +15,29 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (0);
-        newNode = malloc(sizeof(hash_node_t));
+	newNode = malloc(sizeof(hash_node_t));
 	if (newNode == NULL)
 		return (0);
 	newNode->key = strdup(key);
 	newNode->value = strdup(value);
-        newNode->next = NULL;
+	newNode->next = NULL;
 	index = key_index((unsigned char *)key, ht->size);
 	listHead = ht->array[index];
 	if (listHead == NULL)
 	{
-        	ht->array[index] = newNode;
+		ht->array[index] = newNode;
 		return (1);
 	}
 	while (listHead->next != NULL)
 	{
-		if (!strcmp(listHead->key,key))
-			{
-				free(listHead->value);
-				listHead->value = newNode->value;
-				free(newNode->key);
-				free(newNode);
-				return (1);
-			}
+		if (!strcmp(listHead->key, key))
+		{
+			free(listHead->value);
+			listHead->value = newNode->value;
+			free(newNode->key);
+			free(newNode);
+			return (1);
+		}
 		listHead = listHead->next;
 	}
 	listHead->next = newNode;
