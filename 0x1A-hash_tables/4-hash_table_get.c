@@ -23,6 +23,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	while ((cmpRslt = strcmp(node->key, key)) && node->next)
 		node = node->next;
 	if (!cmpRslt)
-		return node->value;
+		return (node->value);
 	return (NULL);
 }
