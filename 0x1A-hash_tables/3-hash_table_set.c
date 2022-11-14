@@ -15,14 +15,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (0);
-	index = key_index(key, ht->size);
         newNode = malloc(sizeof(hash_node_t));
 	if (newNode == NULL)
 		return (0);
 	newNode->key = strdup(key);
 	newNode->value = strdup(value);
         newNode->next = NULL;
-
+	index = key_index((unsigned char *)(newNode->key), ht->size);
 	listHead = ht->array[index];
 	while (listHead)
 		listHead = listHead->next;
