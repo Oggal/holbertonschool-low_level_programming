@@ -24,7 +24,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((unsigned char *)key, ht->size);
 	listHead = ht->array[index];
 	while (listHead)
+	{
+		if (!strcomp(listHead->key,key)
+			{
+				free(listHead->value);
+				listHead->value = newNode->value;
+				free(newNode->key);
+				free(newNode);
+				return (1);
+			}
 		listHead = listHead->next;
+	}
         listHead = newNode;
 	return (1);
 }
