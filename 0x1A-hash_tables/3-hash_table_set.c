@@ -23,7 +23,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
         newNode->next = NULL;
 	index = key_index((unsigned char *)key, ht->size);
 	listHead = ht->array[index];
-	while (listHead)
+	if (listHead == NULL)
+	{
+        	ht->array[index] = newNode;
+		return (1);
+	}
+	while (listHead->next != NULL)
 	{
 		if (!strcmp(listHead->key,key))
 			{
@@ -35,6 +40,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			}
 		listHead = listHead->next;
 	}
-        listHead = newNode;
+	listhead->next = newNode;
 	return (1);
 }
