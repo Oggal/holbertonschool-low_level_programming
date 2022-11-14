@@ -40,6 +40,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			}
 		listHead = listHead->next;
 	}
-	listhead->next = newNode;
+	listHead->next = newNode;
 	return (1);
 }
