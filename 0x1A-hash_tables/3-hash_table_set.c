@@ -21,7 +21,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	newNode->key = strdup(key);
 	newNode->value = strdup(value);
         newNode->next = NULL;
-	index = key_index((unsigned char *)(newNode->key), ht->size);
+	index = key_index((unsigned char *)key, ht->size);
 	listHead = ht->array[index];
 	while (listHead)
 		listHead = listHead->next;
