@@ -21,7 +21,11 @@ int binary_search(int *array, size_t size, int value)
 	if (value < array[i] && size != 1)
 		res = binary_search(array, i, value);
 	else if (value > array[i] && size != 1)
+	{
 		res = binary_search((array + i), i + (size % 2), value);
+		if (res != -1)
+			res += i;
+	}
 	else
 		if (value == array[i])
 		{
