@@ -17,15 +17,15 @@ int binary_search(int *array, size_t size, int value)
 		return (-1);
 	printf("Searching in array: ");
 	print_array(array, size);
-	i = size / 2;
+	i = (size - 1) / 2;
 
 	if (value < array[i] && size != 1)
 		res = binary_search(array, i, value);
 	else if (value > array[i] && size != 1)
 	{
-		res = binary_search((array + i), i + (size % 2), value);
+		res = binary_search((array + i + 1), i, value);
 		if (res != -1)
-			res += i;
+			res += i + 1;
 	}
 	else
 		if (value == array[i])
